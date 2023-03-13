@@ -30,10 +30,12 @@ const componentStoryPaths = testedComponentPackages.map(
 
 module.exports = {
   stories: [...componentStoryPaths],
-
   babel: {},
   typescript: {
     reactDocgen: false,
   },
   addons: [...root.addons],
+  core: {
+    builder: 'webpack5',
+  },
 };

@@ -6,8 +6,8 @@ export const renderSelect = (state: SelectState) => {
   const { slots, slotProps } = getSlots<SelectSlots>(state);
 
   return (
-    <slots.menu {...(slotProps as any).menu}>
-      <slots.menuTrigger {...(slotProps as any).menuTrigger}>
+    <slots.menu {...slotProps.menu}>
+      <slots.menuTrigger {...slotProps.menuTrigger}>
         <slots.root {...slotProps.root}>
           <slots.selectValue {...slotProps.selectValue} />
         </slots.root>
