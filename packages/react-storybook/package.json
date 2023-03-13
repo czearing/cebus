@@ -17,18 +17,19 @@
   "dependencies": {
     "@cebus/react-theme": "^0.0.1",
     "@cebus/react-provider": "^0.0.1",
-    "@storybook/react": "^6.4.15",
-    "@storybook/addon-a11y": "^6.4.15",
-    "@storybook/addon-actions": "^6.4.15",
-    "@storybook/addon-docs": "^6.4.15",
-    "@storybook/addon-essentials": "^6.4.15",
+    "@storybook/react": "^6.5.16",
+    "@storybook/addon-a11y": "^6.5.16",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-docs": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-knobs": "^6.4.0",
-    "@storybook/addon-links": "^6.4.19",
-    "@storybook/addons": "^6.4.19",
-    "@storybook/api": "^6.4.19",
-    "@storybook/builder-webpack5": "^6.4.19",
-    "@storybook/core": "^6.4.19",
-    "@storybook/theming": "^6.4.19"
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/addons": "^6.5.16",
+    "@storybook/api": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/core": "^6.5.16",
+    "@storybook/theming": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.4.22"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
@@ -36,6 +37,6 @@
     "react": ">=16.8.0 <18.0.0",
     "react-dom": ">=16.8.0 <18.0.0",
     "@storybook/addon-knobs": "^6.4.0",
-    "@storybook/addons": "^6.4.14"
+    "@storybook/addons": "^6.5.16"
   }
 }

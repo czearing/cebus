@@ -23,10 +23,10 @@
     "chromatic": "cd apps && cd vr-tests && yarn chromatic"
   },
   "devDependencies": {
-    "beachball": "2.24.0",
-    "chromatic": "6.7.0",
-    "prettier": "2.7.1",
-    "husky": "8.0.1",
+    "beachball": "^2.31.12",
+    "chromatic": "^6.17.1",
+    "prettier": "^2.8.4",
+    "husky": "^8.0.3",
     "@nrwl/cli": "14.4.2",
     "@nrwl/jest": "14.4.2",
     "@nrwl/nx-cloud": "14.2.0",
@@ -36,7 +36,7 @@
     "@cebus/scripts": "^0.0.0",
     "@cebus/eslint-plugin": "*",
     "@fluentui/react-conformance": "0.10.1",
-    "webpack": "5.73.0",
+    "webpack": "^5.76.1",
     "@fluentui/react-conformance-griffel": "9.0.0-beta.3"
   },
   "workspaces": [
