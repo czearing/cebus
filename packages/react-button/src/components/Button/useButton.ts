@@ -1,11 +1,17 @@
 import * as React from 'react';
 import { getNativeElementProps } from '@fluentui/react-utilities';
-import { useARIAButton } from '@fluentui/react-aria';
-import type { ARIAButtonSlotProps } from '@fluentui/react-aria';
+import { ARIAButtonSlotProps, useARIAButtonShorthand } from '@fluentui/react-aria';
 import type { ButtonProps, ButtonState } from './Button.types';
 
-export const useButton = (props: ButtonProps, ref: React.Ref<HTMLElement>): ButtonState => {
-  const { as, appearance = 'outline', color = 'inherit', disabled = false, size = 'medium', shape = 'rounded' } = props;
+export const useButton = (props: ButtonProps, ref: React.Ref<HTMLButtonElement | HTMLAnchorElement>): ButtonState => {
+  const {
+    as = 'button',
+    appearance = 'outline',
+    color = 'inherit',
+    disabled = false,
+    size = 'medium',
+    shape = 'rounded',
+  } = props;
 
   const state: ButtonState = {
     appearance,
@@ -17,11 +23,11 @@ export const useButton = (props: ButtonProps, ref: React.Ref<HTMLElement>): Butt
       root: 'button',
     },
     root: getNativeElementProps(
-      as || 'button',
-      useARIAButton<ARIAButtonSlotProps>(props, {
+      as,
+      useARIAButtonShorthand<ARIAButtonSlotProps<'a'>>(props, {
         required: true,
         defaultProps: {
-          ref: ref as React.Ref<HTMLButtonElement>,
+          ref: ref as React.Ref<HTMLButtonElement & HTMLAnchorElement>,
           type: 'button',
         },
       }),

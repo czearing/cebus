@@ -5,7 +5,7 @@ export type ButtonSlots = {
   /**
    * The root of the Button.
    */
-  root: Slot<ARIAButtonSlotProps>;
+  root: NonNullable<Slot<ARIAButtonSlotProps<'a'>>>;
 };
 
 type ButtonCommons = {

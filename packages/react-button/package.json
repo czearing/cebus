@@ -23,10 +23,10 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@griffel/react": "^1.0.0",
-    "@fluentui/react-tabster": "^9.0.0-rc.5",
-    "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@fluentui/react-aria": "9.0.0-rc.5",
+    "@griffel/react": "^1.5.5",
+    "@fluentui/react-tabster": "^9.5.6",
+    "@fluentui/react-utilities": "^9.7.0",
+    "@fluentui/react-aria": "^9.3.13",
     "@cebus/react-theme": "^0.0.1"
   },
   "devDependencies": {

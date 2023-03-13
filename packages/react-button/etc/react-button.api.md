@@ -24,7 +24,7 @@ export type ButtonProps = ComponentProps<ButtonSlots> & ButtonCommons;
 
 // @public (undocumented)
 export type ButtonSlots = {
-    root: Slot<ARIAButtonSlotProps>;
+    root: NonNullable<Slot<ARIAButtonSlotProps<'a'>>>;
 };
 
 // @public (undocumented)
@@ -61,13 +61,13 @@ export type ToggleButtonProps = ButtonProps & Partial<ToggleButtonCommons> & {
 export type ToggleButtonState = ButtonState & ToggleButtonCommons;
 
 // @public (undocumented)
-export const useButton: (props: ButtonProps, ref: React_2.Ref<HTMLElement>) => ButtonState;
+export const useButton: (props: ButtonProps, ref: React_2.Ref<HTMLButtonElement | HTMLAnchorElement>) => ButtonState;
 
 // @public (undocumented)
 export const useButtonStyles: (state: ButtonState) => ButtonState;
 
 // @public (undocumented)
-export const useToggleButton: ({ checked, defaultChecked, ...props }: ToggleButtonProps, ref: React_2.Ref<HTMLButtonElement | HTMLAnchorElement>) => ToggleButtonState;
+export const useToggleButton: (props: ToggleButtonProps, ref: React_2.Ref<HTMLButtonElement | HTMLAnchorElement>) => ToggleButtonState;
 
 // @public (undocumented)
 export const useToggleButtonStyles: (state: ToggleButtonState) => ToggleButtonState;
